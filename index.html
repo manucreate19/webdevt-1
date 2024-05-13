@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <h3>Fill in the Details Below</h3>
+    </header>
+    
+    <main>
+        <form action="/action.php">
+            <input type="text" placeholder="Enter your name">
+            
+            <div class="option-group">
+                <p>Select your class</p>
+                
+                    <input type="radio" name="class" value="class IX">Class IX
+                    
+                    <input type="radio" name="class" value="class X">Class X
+                    <input type="radio" name="class" value="class XI">Class XI
+                    <input type="radio" name="class" value="class XII">Class XII
+                    
+
+                
+            </div>
+            
+            <div class="option-group">
+                <p>Select your section</p>
+                <select name="section">
+                    <option value="sec A">Section A</option>
+                    <option value="sec B">Section B</option>
+                    <option value="sec C">Section C</option>
+                </select>
+            </div>
+            
+            <div class="video">
+                <p>Watch the video and answer the questions given below</p>
+                <iframe width="450" height="315" src="https://www.youtube.com/embed/P2-CwEljcMo?si=U9c7m7VAbXOgtVRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <div class="option-group">
+                <p>The video is regarding which of the following subjects</p>
+                <input type="checkbox" value="Phy" id="phy"><label for="phy">Physics</label>
+                <input type="checkbox" value="Web Dev" id="web-dev"><label for="web-dev">Web Development</label>
+                <input type="checkbox" value="Quant" id="quant"><label for="quant">Quantum Computing</label>
+            </div>
+            
+            <div class="feedback">
+                <textarea type="feedback" id="feedback" row="5" placeholder="Enter your valuable feedback"></textarea>
+            </div>
+            
+            <div class="submit-btn">
+                <input type="Submit" value="Submit">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Manaswini. All rights reserved.</p>
+    </footer>
+</body>
+</html>
